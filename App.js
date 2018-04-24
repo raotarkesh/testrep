@@ -37,27 +37,27 @@ export default class App extends Component<Props> {
     });
          
   }
-//  componentWillMount(){
-//   alert("kkk")
-// var user = new Parse.User();
-// user.set("username", "my name");
-// user.set("password", "my pass");
-// user.set("email", "email@example.com");
+ componentWillMount(){
+  alert("kkk")
+var user = new Parse.User();
+user.set("username", "my name");
+user.set("password", "my pass");
+user.set("email", "email@example.com");
 
-// // other fields can be set just like with Parse.Object
-// user.set("phone", "415-392-0202");
+// other fields can be set just like with Parse.Object
+user.set("phone", "415-392-0202");
 
-// user.signUp(null, {
-//   success: function(user) {
-//    alert("success")
-//   },
-//   error: function(user, error) {
-//     // Show the error message somewhere and let the user try again.
-//     alert("Error: " + error.code + " " + error.message);
-//   }
-// });
+user.signUp(null, {
+  success: function(user) {
+   alert("success")
+  },
+  error: function(user, error) {
+    // Show the error message somewhere and let the user try again.
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
 
-// }
+}
   render() {
     return (
       <View style={styles.container}>
